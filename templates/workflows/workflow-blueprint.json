@@ -1,0 +1,114 @@
+{
+  "workflow": {
+    "name": "[Workflow Name]",
+    "description": "[One-line description]",
+    "version": "1.0.0",
+    "created": "YYYY-MM-DD",
+    "author": "Charlotte Fallon",
+    "category": "[email|social-media|data-management|content|automation]",
+    "difficulty": "[beginner|intermediate|advanced]",
+    "estimated_setup_time": "[X minutes]"
+  },
+  "metadata": {
+    "tags": ["tag1", "tag2", "tag3"],
+    "use_cases": [
+      "[Use case 1]",
+      "[Use case 2]",
+      "[Use case 3]"
+    ],
+    "prerequisites": [
+      "[Prerequisite 1]",
+      "[Prerequisite 2]"
+    ],
+    "integrations_required": [
+      {
+        "name": "[Service name]",
+        "type": "[oauth|api-key|webhook]",
+        "required": true,
+        "notes": "[Any special setup notes]"
+      }
+    ]
+  },
+  "steps": [
+    {
+      "step_number": 1,
+      "name": "[Step name]",
+      "description": "[What this step does]",
+      "type": "[trigger|action|filter|transform|output]",
+      "tool": "[Tool/service used]",
+      "configuration": {
+        "setting1": "[Value or description]",
+        "setting2": "[Value or description]"
+      },
+      "inputs": [
+        {
+          "name": "[Input name]",
+          "type": "[string|number|array|object]",
+          "required": true,
+          "description": "[What this input is]",
+          "example": "[Example value]"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "[Output name]",
+          "type": "[string|number|array|object]",
+          "description": "[What this output is]",
+          "passes_to": "[Next step number or 'final']"
+        }
+      ],
+      "error_handling": {
+        "on_error": "[continue|stop|retry]",
+        "retry_count": 3,
+        "fallback": "[What to do if this fails]"
+      }
+    }
+  ],
+  "testing": {
+    "test_data": {
+      "description": "[How to test this workflow]",
+      "sample_input": "[Example input data]",
+      "expected_output": "[What should happen]"
+    },
+    "common_issues": [
+      {
+        "issue": "[Common problem]",
+        "solution": "[How to fix it]"
+      }
+    ]
+  },
+  "deployment": {
+    "deployment_notes": "[Any special notes about deploying this]",
+    "monitoring": {
+      "metrics_to_track": [
+        "[Metric 1]",
+        "[Metric 2]"
+      ],
+      "alerts": [
+        {
+          "condition": "[When to alert]",
+          "action": "[What to do]"
+        }
+      ]
+    }
+  },
+  "cost": {
+    "estimated_monthly_cost": "[£X or 'Free']",
+    "cost_breakdown": [
+      {
+        "service": "[Service name]",
+        "cost": "[Cost details]"
+      }
+    ]
+  },
+  "customization": {
+    "customizable_fields": [
+      {
+        "field": "[Field name]",
+        "description": "[What you can customize]",
+        "examples": ["[Example 1]", "[Example 2]"]
+      }
+    ],
+    "advanced_options": "[Link to advanced setup docs]"
+  }
+}
